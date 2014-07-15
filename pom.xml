@@ -5,7 +5,15 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+     <sourceDirectory>src/main/java</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -25,4 +33,17 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+  <dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>servlet-api</artifactId>
+	<version>2.5</version>
+</dependency>
+  
+  <dependency>
+	<groupId>log4j</groupId>
+	<artifactId>log4j</artifactId>
+	<version>1.2.17</version>
+</dependency>
+  </dependencies>
 </project>
