@@ -10,15 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.log4j.Logger;
-
 /**
  * Servlet implementation class Converter
  */
 @WebServlet("/Converter")
 public class Converter extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	Logger  logger = Logger.getLogger("com.balaji.demo");
 
        
     /**
